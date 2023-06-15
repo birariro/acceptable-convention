@@ -37,7 +37,6 @@
             <emptyLine/>
             <package name="com" withSubpackages="true" static="false"/> <!-- com 패키지 -->
             <emptyLine/>
-
             <package name="" withSubpackages="true" static="false"/> <!-- 빈 패키지 -->
             <emptyLine/>
         </value>
@@ -68,8 +67,7 @@
     <option name="BINARY_OPERATION_WRAP" value="1"/> <!-- 이항 연산자 래핑 설정 -->
     <option name="BINARY_OPERATION_SIGN_ON_NEXT_LINE" value="true"/> <!-- 이항 연산자 기호를 다음 줄로 이동할지 여부 -->
     <option name="TERNARY_OPERATION_WRAP" value="1"/> <!-- 삼항 연산자 래핑 설정 -->
-    <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE"
-            value="true"/> <!-- 삼항 연산자 기호를 다음 줄로 이동할지 여부 -->
+    <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true"/> <!-- 삼항 연산자 기호를 다음 줄로 이동할지 여부 -->
     <option name="FOR_STATEMENT_WRAP" value="1"/> <!-- for문 래핑 설정 -->
     <option name="ARRAY_INITIALIZER_WRAP" value="1"/> <!-- 배열 초기화자 래핑 설정 -->
     <option name="WRAP_COMMENTS" value="true"/> <!-- 주석 래핑 설정 -->
@@ -77,8 +75,7 @@
     <option name="DOWHILE_BRACE_FORCE" value="3"/> <!-- do-while문 괄호 강제 여부 -->
     <option name="WHILE_BRACE_FORCE" value="3"/> <!-- while문 괄호 강제 여부 -->
     <option name="FOR_BRACE_FORCE" value="3"/> <!-- for문 괄호 강제 여부 -->
-    <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE"
-            value="true"/> <!-- 배열 초기화자 좌괄호 앞에 공백 추가 여부 -->
+    <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true"/> <!-- 배열 초기화자 좌괄호 앞에 공백 추가 여부 -->
 
     <!-- Java 코드 스타일 설정 -->
     <codeStyleSettings language="JAVA">

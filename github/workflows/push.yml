@@ -1,0 +1,12 @@
+name: PUSH EVENT
+on: [push, pull_request]
+
+jobs:
+  reviewer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reviewer run
+        uses: birariro/chicken-reviewer@1.0.0
+        with:
+          github-token: '<GitHub WebHook Secret Token>'
+

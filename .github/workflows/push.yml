@@ -8,5 +8,5 @@ jobs:
       - name: reviewer run
         uses: birariro/chicken-reviewer@1.0.8
         with:
-          github-token: '<GitHub WebHook Secret Token>'
+          github-token: ${{ secrets.GIT_TOKEN }}
 

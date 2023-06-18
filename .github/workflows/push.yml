@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: reviewer run
-        uses: birariro/chicken-reviewer@1.0.0.6
+        uses: birariro/chicken-reviewer@1.0.0.0-beta
         with:
           github-token: ${{ secrets.GIT_TOKEN }}
           gpt-key: ${{secrets.GPT_KEY}}

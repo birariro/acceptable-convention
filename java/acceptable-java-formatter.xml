@@ -25,19 +25,19 @@
     <option name="IMPORT_LAYOUT_TABLE">
         <value>
             <emptyLine/>
-            <package name="" withSubpackages="true" static="true"/> <!-- 빈 패키지 -->
+            <package name="" withSubpackages="true" static="true"/>
             <emptyLine/>
-            <package name="java" withSubpackages="true" static="false"/> <!-- java 패키지 -->
+            <package name="java" withSubpackages="true" static="false"/>
             <emptyLine/>
-            <package name="javax" withSubpackages="true" static="false"/> <!-- javax 패키지 -->
+            <package name="javax" withSubpackages="true" static="false"/>
             <emptyLine/>
-            <package name="org" withSubpackages="true" static="false"/> <!-- org 패키지 -->
+            <package name="org" withSubpackages="true" static="false"/>
             <emptyLine/>
-            <package name="net" withSubpackages="true" static="false"/> <!-- net 패키지 -->
+            <package name="net" withSubpackages="true" static="false"/>
             <emptyLine/>
-            <package name="com" withSubpackages="true" static="false"/> <!-- com 패키지 -->
+            <package name="com" withSubpackages="true" static="false"/>
             <emptyLine/>
-            <package name="" withSubpackages="true" static="false"/> <!-- 빈 패키지 -->
+            <package name="" withSubpackages="true" static="false"/>
             <emptyLine/>
         </value>
     </option>

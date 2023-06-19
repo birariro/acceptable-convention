@@ -10,4 +10,5 @@ jobs:
         with:
           github-token: ${{ secrets.GIT_TOKEN }}
           gpt-key: ${{secrets.GPT_KEY}}
+          trigger: "PR"
 

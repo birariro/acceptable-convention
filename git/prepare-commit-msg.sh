@@ -11,9 +11,9 @@ addCommitFooterTicket() {
   DESCRIPTION=$(git config branch."$NAME".description)
 
 	# 잘라낸 문자열 ISSUE_NUMBER 이 ISSUE 혹은 TIKET 문자열을 포함하고 있다면 커밋 에디터에 추가
-
-  echo "ticket: $ISSUE_NUMBER $(cat $COMMIT_MESSAGE)" > $COMMIT_MESSAGE
-
+  if [[ $ISSUE_NUMBER == *ISSUE* ]] || [[ $ISSUE_NUMBER == *TIKET* ]]; then
+    echo "ticket: $ISSUE_NUMBER $(cat $COMMIT_MESSAGE)" > $COMMIT_MESSAGE
+  fi
 
   if [ -n "$DESCRIPTION" ]
   then

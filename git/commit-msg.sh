@@ -60,15 +60,15 @@ addCommitHeaderEmoji() {
   elif [[ $FIRST_LINE =~ ^(fix.*) ]]; then
     NEW_COMMIT_MESSAGE="🔥 $FIRST_LINE"
   elif [[ $FIRST_LINE =~ ^(docs.*) ]]; then
-      NEW_COMMIT_MESSAGE="📝 $FIRST_LINE"
+    NEW_COMMIT_MESSAGE="📝 $FIRST_LINE"
   elif [[ $FIRST_LINE =~ ^(style.*) ]]; then
-      NEW_COMMIT_MESSAGE="🎨 $FIRST_LINE"
+    NEW_COMMIT_MESSAGE="🎨 $FIRST_LINE"
   elif [[ $FIRST_LINE =~ ^(refactor.*) ]]; then
-      NEW_COMMIT_MESSAGE="🧠 $FIRST_LINE"
+    NEW_COMMIT_MESSAGE="🧠 $FIRST_LINE"
   elif [[ $FIRST_LINE =~ ^(test.*) ]]; then
-      NEW_COMMIT_MESSAGE="🧪 $FIRST_LINE"
+    NEW_COMMIT_MESSAGE="🧪 $FIRST_LINE"
   elif [[ $FIRST_LINE =~ ^(chore.*) ]]; then
-      NEW_COMMIT_MESSAGE="🍎 $FIRST_LINE"
+    NEW_COMMIT_MESSAGE="🍎 $FIRST_LINE"
   fi
 
   echo "$NEW_COMMIT_MESSAGE" > $COMMIT_MSG_FILE

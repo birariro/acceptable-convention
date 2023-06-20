@@ -1,0 +1,15 @@
+name: PUSH EVENT
+on: [push, pull_request]
+
+jobs:
+  reviewer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reviewer run
+        uses: birariro/chicken-reviewer@1.0.1
+        with:
+          github-token: ${{ secrets.GIT_TOKEN }}
+          gpt-key: ${{secrets.GPT_KEY}}
+          trigger: "PUSH"
+          language: "KR"
+

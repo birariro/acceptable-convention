@@ -10,17 +10,17 @@ byPass() {
   if [[ $FIRST_LINE =~ ^(Merge branch) ]] ||
      [[ $FIRST_LINE =~ ^(Merge pull request) ]]; then
 
-    echo "Automatically generated commit message from git"
+    echo "[commit lint pass] auto generated commit message"
     exit 0
   fi
 
   if [[ $FIRST_LINE =~ ^(initial) ]]; then
-    echo "Initial commit"
+    echo "[commit lint pass] init commit message"
     exit 0
   fi
 }
 
-validMessage() {
+validHeader() {
   if [[ $FIRST_LINE == "" ]]; then
     echo "[commit lint error] empty commit message"
     exit 1
@@ -54,7 +54,7 @@ validMessage() {
   fi
 }
 
-addCommitHeaderEmoji() {
+injectHeaderEmoji() {
   if [[ $FIRST_LINE =~ ^(feat.*) ]]; then
     NEW_COMMIT_MESSAGE="🚀 $FIRST_LINE"
   elif [[ $FIRST_LINE =~ ^(fix.*) ]]; then
@@ -75,8 +75,8 @@ addCommitHeaderEmoji() {
 }
 
 byPass
-validMessage
-addCommitHeaderEmoji
+validHeader
+injectHeaderEmoji
 
-echo "Pass commit lint!"
+echo "[commit lint pass] lint success"
 exit 0

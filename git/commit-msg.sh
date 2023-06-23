@@ -39,7 +39,7 @@ validHeader() {
       [[ ! $FIRST_LINE =~ ^(test(\(.*\))?!?: ) ]] &&
       [[ ! $FIRST_LINE =~ ^(chore(\(.*\))?!?: ) ]]; then
 
-    echo "\n[commit lint error] HEADER 의 접두사, 콜론, 띄어쓰기 형태를 확인\n"
+    echo "\n[commit lint error] HEADER 의 type, 콜론, 띄어쓰기 형태를 확인\n"
 
     echo "<type>(scope option): <subject>"
     echo "- feat: 새로운 기능 추가"

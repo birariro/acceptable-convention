@@ -1,6 +1,8 @@
 # acceptable-convention
 
 ## git
+
+### commit-msg, prepare-commit-msg
 git commit message 의 컨벤션 검사
 
 아래의 컨벤션을 참고
@@ -9,7 +11,13 @@ git commit message 의 컨벤션 검사
 대표 적용 컨벤션
 - commit message 의 Header 에는 feat, fix, docs, style, refactor, test, chore 만 허용
 - Header 이름에 따라서 이모지 주입
-- 브랜치 이름을 header/ticket/name 로 작성시 ticket 을 파싱하여 git commit msg 하단에 명시
+- 브랜치 이름을 header/{ticket}/name 로 작성시 ticket 을 파싱하여 git commit msg 하단에 명시
+
+### pre-commit.sh
+git commit file 내용 검사
+
+대표 적용
+- 커밋 내용중 정해진 특정 문자열이 포함된 내용이 있다면 커밋을 중단
 
 ## java
 아래의 컨벤션을 참고

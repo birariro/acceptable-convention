@@ -71,8 +71,10 @@ injectHeaderEmoji() {
   elif [[ $FIRST_LINE =~ ^(chore.*) ]]; then
     NEW_COMMIT_MESSAGE="🍎 $COMMIT_MESSAGE"
   fi
-
-  echo "$NEW_COMMIT_MESSAGE" > $COMMIT_MSG_FILE
+  
+  REST_OF_LINES=$(tail -n +2 "$COMMIT_MSG_FILE")
+  MODIFIED_CONTENT="$NEW_COMMIT_MESSAGE\n$REST_OF_LINES"
+  echo "$MODIFIED_CONTENT" > $COMMIT_MSG_FILE
 }
 
 byPass
